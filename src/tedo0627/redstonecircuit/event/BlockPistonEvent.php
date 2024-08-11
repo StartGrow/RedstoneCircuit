@@ -14,7 +14,6 @@ class BlockPistonEvent extends BlockEvent implements Cancellable {
 
     public function __construct(BlockPiston $piston) {
         parent::__construct($piston);
-
         $this->piston = $piston;
     }
 
