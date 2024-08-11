@@ -12,7 +12,6 @@ class BlockRedstonePowerUpdateEvent extends BlockEvent {
 
     public function __construct(Block $block, bool $newPower, bool $powered) {
         parent::__construct($block);
-
         $this->newPowered = $newPower;
         $this->powered = $powered;
     }
