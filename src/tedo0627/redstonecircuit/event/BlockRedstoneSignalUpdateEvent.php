@@ -12,7 +12,6 @@ class BlockRedstoneSignalUpdateEvent extends BlockEvent {
 
     public function __construct(Block $block, int $newSignal, int $oldSignal) {
         parent::__construct($block);
-
         $this->newSignal = $newSignal;
         $this->oldSignal = $oldSignal;
     }
