@@ -106,7 +106,7 @@ class RedstoneCircuit extends PluginBase {
             BlockTypeIds::JUNGLE_FENCE_GATE, BlockTypeIds::DARK_OAK_FENCE_GATE, BlockTypeIds::ACACIA_FENCE_GATE
         ], fn($id, $name, $info) => new BlockFenceGate($id, $name, $info));
         $info = new BlockBreakInfo(2, BlockToolType::AXE, 0, 15);
-        $this->addBlock("fence_gate", new BlockFenceGate(new BlockIdentifier(BlockTypeIds::CRIMSON
+        $this->addBlock("fence_gate", new BlockFenceGate(new BlockIdentifier(BlockTypeIds::CRIMSON), "Crimson Fence Gate", $info));
         $blockLoader = new BlockLoader("Fence Gate", _FENCE_GATE, "Crimson Fence Gate", $info);
 
         $this->addItemBlock("fence_gate", BlockTypeIds::CRIMSON_FENCE_GATE, new ItemIdentifier(ItemIds::CRIMSON_FENCE_GATE, 0));
